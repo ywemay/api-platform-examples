@@ -1,0 +1,7 @@
+services:
+
+    # Hey Doctrine! This service is an entity listener. So when you need the
+    # CheeseListingSetOwnerListener object to do the entity listener stuff,
+    # use this service instead of trying to instantiate it yourself.
+    App\Doctrine\CheeseListingSetOwnerListener:
+        tags: [doctrine.orm.entity_listener]
